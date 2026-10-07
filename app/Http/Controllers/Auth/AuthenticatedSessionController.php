@@ -12,6 +12,12 @@ use Illuminate\View\View;
 
 class AuthenticatedSessionController extends Controller
 {
+
+ //下記を追記してください
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display the login view.
      */
