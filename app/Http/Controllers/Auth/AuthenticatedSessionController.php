@@ -13,7 +13,7 @@ use Illuminate\View\View;
 class AuthenticatedSessionController extends Controller
 {
 
- //下記を追記してください
+ //アクセス制限をかける
     public function __construct()
     {
         $this->middleware('auth');
