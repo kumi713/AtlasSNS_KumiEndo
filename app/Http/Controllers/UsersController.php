@@ -16,13 +16,3 @@ class UsersController extends Controller
         return view('users.search');
     }
 }
-public function create(Request $request)
-    {
-        //バリデーションを設定
-        $request->validate([
-                'UserName' => 'required|min:2|max:12',
-                'Email' => 'required|min:5|max:40|unique|email', // メールアドレスの形式を確認
-                'Password' => 'required|min:8|max:20|regex:/^[a-zA-Z0-9]*$/', // パスワードの長さを確認
-                'PasswordConfirm' => 'required|Password'
-        ]);
-    }
