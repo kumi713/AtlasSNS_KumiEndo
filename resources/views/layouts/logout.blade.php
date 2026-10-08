@@ -24,7 +24,8 @@
     </head>
     <body>
         <header>
-            <h1><img src="images/atlas.png"></h1>
+            <!-- トップページに遷移する -->
+            <h1><a href="/"><img src="images/atlas.png"></h1>
             <p>Social Network Service</p>
         </header>
         <div id="container">
