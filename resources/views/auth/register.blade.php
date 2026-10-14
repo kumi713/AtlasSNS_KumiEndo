@@ -8,7 +8,7 @@
 {{ Form::text('username',null,['class' => 'input']) }}
 
 {{ Form::label('メールアドレス') }}
-{{ Form::email('email',null,['class' => 'input']) }}
+{{ Form::text('email',null,['class' => 'input']) }}
 
 {{ Form::label('パスワード') }}
 {{ Form::text('password',null,['class' => 'input']) }}

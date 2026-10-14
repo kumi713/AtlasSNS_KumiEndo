@@ -13,11 +13,7 @@ use Illuminate\View\View;
 class AuthenticatedSessionController extends Controller
 {
 
- //アクセス制限をかける
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+
     /**
      * Display the login view.
      */
