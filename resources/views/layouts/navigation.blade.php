@@ -4,10 +4,15 @@
                 <div id="">
                     <p>〇〇さん</p>
                 </div>
-                <ul>
-                    <li><a href="">ホーム</a></li>
-                    <li><a href="">プロフィール</a></li>
-                    <li><a href="">ログアウト</a></li>
-                </ul>
+                <!-- アコーディオンメニュー -->
+                <div class="container">
+                    <button class="accordion-toggle";></button>
+                        <ul class="menu-list">
+                            <li><a href="http://127.0.0.1:8000/top">ホーム</a></li>
+                            <li><a href="http://127.0.0.1:8000/profile">プロフィール編集</a></li>
+                            <li><a href="http://127.0.0.1:8000/login">ログアウト</a></li>
+                        </ul>
+                    </button>
+                </div>
             </div>
         </div>
