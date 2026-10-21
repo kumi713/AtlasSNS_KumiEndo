@@ -4,15 +4,16 @@
                 <div id="">
                     <p>〇〇さん</p>
                 </div>
-                <!-- アコーディオンメニュー -->
-                <div class="container">
-                    <button class="accordion-toggle";></button>
-                        <ul class="menu-list">
-                            <li><a href="http://127.0.0.1:8000/top">ホーム</a></li>
-                            <li><a href="http://127.0.0.1:8000/profile">プロフィール編集</a></li>
-                            <li><a href="http://127.0.0.1:8000/login">ログアウト</a></li>
-                        </ul>
-                    </button>
+                  <!-- クリックするボタン部分 -->
+                <div class="menu-trigger" id="menuTrigger">
+                    <span class="username">admin さん</span>
+                    <span class="arrow-icon"></span>
+                    <img src="user-icon.png" alt="ユーザーアイコン" class="user-avatar"> <!-- 画像の赤いアイコン部分 -->
                 </div>
+                <ul class="menu-items">
+                    <li><a href="http://127.0.0.1:8000/top">HOME</a></li>
+                    <li><a href="http://127.0.0.1:8000/profile">プロフィール編集</a></li>
+                    <li><a href="http://127.0.0.1:8000/login">ログアウト</a></li>
+                </ul>
             </div>
         </div>

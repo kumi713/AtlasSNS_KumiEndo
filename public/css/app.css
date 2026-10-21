@@ -7966,3 +7966,43 @@ button.close {
     display: none !important
   }
 }
+
+/* 表全体の枠線と見た目の設定（ulタグ） */
+ul {
+  max-width: 30%;       /* 写真のように少し横幅を広めに設定（数値は調整してください） */
+  margin: 10px 0;
+  padding: 0;
+  margin-left:auto;
+  margin-right:0;
+  list-style: none;       /* リストの「・」マークを消す */
+  border: 1px solid #000; /* 全体を囲む黒い外枠 */
+  background-color: #fff; /* 基本の背景色は白 */
+}
+
+/* 各行の区切り線（liタグ） */
+ul li {
+  border-bottom: 1px solid #000; /* マス目を区切る黒い横線 */
+  text-align: center;            /* 文字を真ん中に寄せる */
+  height: auto;
+}
+
+/* 一番下の行（ログアウト）だけは、下線が外枠と重ならないように消す */
+ul li:last-child {
+  border-bottom: none;
+}
+
+/* ボタン（リンク）の基本設定（aタグ） */
+ul a {
+  display: block;         /* 行の幅いっぱいにクリック・ホバー反応エリアを広げる */
+  padding: 20px 0;        /* 上下に広めの余白をとり、写真のようなゆったりした高さを再現 */
+  font-size: 18px;        /* 文字の大きさ */
+  color: #333;            /* 通常時の文字色（薄めの黒・ダークグレー） */
+  text-decoration: none;  /* リンクの下線を消す */
+  transition: background-color 0.2s, color 0.2s; /* 色の変化を滑らかにする */
+}
+
+/* 【重要】マウスを乗せた（ホバーした）ときの表示（写真の「プロフィール編集」の状態） */
+ul a:hover {
+  background-color: #00124d; /* 写真のような濃い紺色（ネイビー）に変更 */
+  color: #fff;               /* 文字色を白に反転させる */
+}

@@ -6,66 +6,12 @@ html{
 
 body{
     height: 100%;
-    /* background: cyan; */
-    background:#186AC9;
-}
-/* ボタンのスタイル（Flexboxで両端に配置） */
-.accordion-toggle {
-  display: flex;
-  justify-content: space-between; /* 文字と矢印を両端に離す */
-  align-items: center;            /* 上下中央揃え */
-  width: 220px;                   /* 矢印の分、少し幅を広げています */
-  padding: 10px 15px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  font-size: 14px;
+    background: linear-gradient(
+    to bottom,
+    #1372cf 0%,   /* 上端：鮮やかな青色 */
+    #69b2a1 60%,  /* 中央やや下：青緑っぽい中間色 */
+    #eed852 100%  /* 下端：柔らかな黄色 */
+  );
 }
 
-/* 疑似要素で「下矢印（▼）」を作成 */
-.accordion-toggle::after {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-bottom: 2px solid #666; /* 枠線を使ってL字の形を作る */
-  border-right: 2px solid #666;
-  transform: rotate(45deg);       /* 45度回転させて下矢印（∨）にする */
-  transition: transform 0.3s;    /* 回転時のアニメーション */
-  margin-top: -4px;               /* 位置の微調整 */
-}
 
-/* 【追加】メニューが開いているとき（ボタンに.is-openがあるとき）の矢印 */
-.accordion-toggle.is-open::after {
-  transform: rotate(-135deg);     /* 反転させて上矢印（∧）にする */
-  margin-top: 4px;                /* 位置の微調整 */
-}
-
-/* --- 以下は前回と同様のスタイル --- */
-.accordion-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 220px;
-  display: flex;
-  flex-direction: column; 
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-
-.accordion-menu li a {
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  color: #333;
-  border: 1px solid #ccc;
-  border-top: none;
-  text-align: center;
-  background-color: #fff;
-}
-
-/* メニューが開いた状態 */
-.accordion-menu.is-open {
-  max-height: 200px; 
-}
