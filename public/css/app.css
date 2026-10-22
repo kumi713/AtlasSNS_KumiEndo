@@ -7973,7 +7973,6 @@ ul {
   margin: 10px 0;
   padding: 0;
   margin-left:auto;
-  margin-right:0;
   list-style: none;       /* リストの「・」マークを消す */
   border: 1px solid #000; /* 全体を囲む黒い外枠 */
   background-color: #fff; /* 基本の背景色は白 */

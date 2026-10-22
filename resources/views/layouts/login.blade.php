@@ -36,9 +36,10 @@
 <div class="main-wrapper">
     <div id="side-bar">
       <div id="confirm">
-        <p>〇〇さんの</p>
+        <p>{{ auth()->user()->username}}さんの</p>
         <div>
           <p>フォロー数</p>
+          <!-- フォロワー数の表示をさせる -->
           <p>〇〇名</p>
         </div>
         <p class="btn"><a href="http://127.0.0.1:8000/follow-list">フォローリスト</a></p>

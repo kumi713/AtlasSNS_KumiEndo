@@ -3,7 +3,7 @@
             <div id="">
                 <div id="">
                 <!-- ログインしたユーザー名を表示をさせたい -->
-                    <p> {{ Form::label('ユーザー名') }}さん</p>
+                    <p>{{ auth()->user()->username}}さん</p>
                 </div>
                 <!-- クリックするボタン部分 -->
                 <div class="menu-trigger" id="menuTrigger">

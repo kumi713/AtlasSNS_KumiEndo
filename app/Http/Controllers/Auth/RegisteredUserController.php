@@ -32,10 +32,9 @@ class RegisteredUserController extends Controller
     {
         //バリデーションを設定
         $request->validate([
-                'UserName' => 'required|min:2|max:12',
-                'Email' => 'required|min:5|max:40|unique|email', // メールアドレスの形式を確認
-                'Password' => 'required|min:8|max:20|regex:/^[a-zA-Z0-9]*$/', // パスワードの長さを確認
-                'PasswordConfirm' => 'required|Password'
+                'username' => 'required|min:2|max:12',
+                'email' => 'required|min:5|max:40|unique:users,email|email', // メールアドレスの形式を確認
+                'password' => 'required|min:8|max:20|regex:/^[a-zA-Z0-9]*$/|confirmed', // パスワードの長さを確認
         ]);
 
         User::create([

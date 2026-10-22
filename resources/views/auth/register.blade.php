@@ -4,8 +4,8 @@
 
 <h2>新規ユーザー登録</h2>
 
-{{ Form::label('ユーザー名') }}
-{{ Form::text('username',null,['class' => 'input']) }}
+    {{ Form::label('ユーザー名') }}
+    {{ Form::text('username',null,['class' => 'input']) }}
 
 {{ Form::label('メールアドレス') }}
 {{ Form::email('email',null,['class' => 'input']) }}
@@ -18,7 +18,7 @@
 
 {{ Form::submit('登録') }}
 
-<p><a href="login">ログイン画面へ戻る</a></p>
+<p><a href="http://127.0.0.1:8000/login">ログイン画面へ戻る</a></p>
 
 {!! Form::close() !!}
 
