@@ -33,6 +33,7 @@
     <div id="container">
       {{ $slot }}
     </div>
+<div class="main-wrapper">
     <div id="side-bar">
       <div id="confirm">
         <p>〇〇さんの</p>
@@ -40,16 +41,17 @@
           <p>フォロー数</p>
           <p>〇〇名</p>
         </div>
-        <p class="btn"><a href="">フォローリスト</a></p>
+        <p class="btn"><a href="http://127.0.0.1:8000/follow-list">フォローリスト</a></p>
         <div>
           <p>フォロワー数</p>
           <p>〇〇名</p>
         </div>
-        <p class="btn"><a href="">フォロワーリスト</a></p>
+        <p class="btn"><a href="http://127.0.0.1:8000/follower-list">フォロワーリスト</a></p>
       </div>
-      <p class="btn"><a href="">ユーザー検索</a></p>
+      <p class="btn"><a href="http://127.0.0.1:8000/search">ユーザー検索</a></p>
     </div>
   </div>
+</div>
   <footer>
   </footer>
   <script src="{{ asset('js/app.js') }}"></script>

@@ -16,7 +16,25 @@ header{
 #container{
     flex: 0 0 80%;
 }
-#side-bar{
+/* #side-bar{
     flex: 0 0 19%;
     border-left: 1px solid #727272;
+} */
+
+/* 画面全体を包むコンテナ */
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right:0;
+  gap: 30px; /* メインとサイドバーの間の余白 */
+  
+  /* 🌟 通常の並び順（左から右）にするため、row-reverseを削除するか以下を指定します */
+  flex-direction: row; 
+}
+
+#side-bar{
+  width: 20%;      /* サイドバーの固定幅（好みに合わせて調整してください） */
+  border-left: 1px solid #ddd; /* 左寄せにしたので、右側に区切り線を付けると綺麗です */
 }

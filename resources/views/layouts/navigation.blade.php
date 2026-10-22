@@ -2,11 +2,11 @@
             <h1><a><img src="images/atlas.png"></a></h1>
             <div id="">
                 <div id="">
-                    <p>〇〇さん</p>
+                <!-- ログインしたユーザー名を表示をさせたい -->
+                    <p> {{ Form::label('ユーザー名') }}さん</p>
                 </div>
-                  <!-- クリックするボタン部分 -->
+                <!-- クリックするボタン部分 -->
                 <div class="menu-trigger" id="menuTrigger">
-                    <span class="username">admin さん</span>
                     <span class="arrow-icon"></span>
                     <img src="user-icon.png" alt="ユーザーアイコン" class="user-avatar"> <!-- 画像の赤いアイコン部分 -->
                 </div>

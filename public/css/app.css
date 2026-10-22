@@ -8006,3 +8006,123 @@ ul a:hover {
   background-color: #00124d; /* 写真のような濃い紺色（ネイビー）に変更 */
   color: #fff;               /* 文字色を白に反転させる */
 }
+
+/* 全体のレイアウト（必要に応じて親要素に当ててください） */
+.sns-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'sans-serif';
+  color: #333;
+}
+
+/* アバターアイコンの共通設定 */
+.user-avatar-red, .user-avatar-default {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.user-avatar-red { background-color: #e54d42; } /* 赤アイコン */
+.user-avatar-default { background-color: #39b54a; } /* 各自のアイコンカラーに代入してください */
+
+/* --- 新規投稿フォームエリア --- */
+.post-form-container {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.post-form {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.form-input-area {
+  flex-grow: 1;
+}
+.form-control-textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px 0;
+}
+.form-control-textarea::placeholder {
+  color: #ccc;
+}
+.submit-btn {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* --- タイムライン（投稿一覧）エリア --- */
+.post-card {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  gap: 15px;
+}
+.post-main {
+  flex-grow: 1;
+  position: relative;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.username {
+  font-weight: bold;
+}
+.post-time {
+  color: #888;
+  font-size: 14px;
+}
+.post-body {
+  font-size: 15px;
+  line-height: 1.6;
+  padding-right: 100px; /* ボタンと被らないように余白を確保 */
+}
+
+/* --- 編集・削除ボタンエリア --- */
+.post-actions {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap: 10px;
+}
+.edit-btn, .delete-btn {
+  border: 2px solid;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  transition: all 0.2s ease; /* アニメーションを滑らかに */
+}
+
+/* 編集ボタン（水色系） */
+.edit-btn {
+  border-color: #17a2b8;
+  color: #17a2b8;
+}
+.edit-btn:hover {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+/* 🌟 削除ボタン（赤系：ホバー時に色が反転する設定） */
+.delete-btn {
+  border-color: #dc3545;
+  color: #dc3545; /* 通常時は文字と枠線が赤 */
+}
+.delete-btn:hover {
+  background-color: #dc3545; /* ホバー時は背景が赤 */
+  color: #fff;               /* 文字やアイコンが白（反転） */
+}
+
