@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/auth.php';
 
-Route::get('top', [PostsController::class, 'index']);
+// 投稿に必要なルーティング
+Route::get('top', [PostsController::class, 'index'])->name('posts.store');
 
 Route::get('profile', [ProfileController::class, 'profile']);
 
@@ -28,5 +29,3 @@ Route::get('search', [UsersController::class, 'index']);
 
 Route::get('follow-list', [PostsController::class, 'index']);
 Route::get('follower-list', [PostsController::class, 'index']);
-
-// Route::post('/login', [PostsController::class, 'showUsername']);
