@@ -7967,9 +7967,9 @@ button.close {
   }
 }
 
-/* 表全体の枠線と見た目の設定（ulタグ） */
+/* アコーディオンメニュー */
 ul {
-  max-width: 30%;       /* 写真のように少し横幅を広めに設定（数値は調整してください） */
+  max-width: 200px;
   margin: 10px 0;
   padding: 0;
   margin-left:auto;
@@ -8084,7 +8084,8 @@ ul a:hover {
 .post-body {
   font-size: 15px;
   line-height: 1.6;
-  padding-right: 100px; /* ボタンと被らないように余白を確保 */
+  padding-right: 100px;
+   /* ボタンと被らないように余白を確保 */
 }
 
 /* --- 編集・削除ボタンエリア --- */

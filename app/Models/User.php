@@ -32,4 +32,8 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+        // hasMany結合(主テーブル -> 従テーブル)
+    public function posts() {
+        return $this->hasMany('App\Models\Post');
+    }
 }

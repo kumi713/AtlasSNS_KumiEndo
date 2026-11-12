@@ -9,4 +9,9 @@ class Post extends Model
 {
     use HasFactory;
     protected $fillable = ['post'];
+
+    // belongsTo結合(主テーブル <- 従テーブル)リレーション
+    public function user() {
+        return $this->belongsTo('App\Models\User');
+    }
 }

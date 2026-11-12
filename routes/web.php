@@ -20,8 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/auth.php';
 
-// 投稿に必要なルーティング
-Route::get('top', [PostsController::class, 'index'])->name('posts.store');
+// トップページに行く
+Route::get('top', [PostsController::class, 'index']);
+Route::post('top', [PostsController::class, 'store'])->name('posts.store');
 
 Route::get('profile', [ProfileController::class, 'profile']);
 

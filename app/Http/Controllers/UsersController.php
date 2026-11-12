@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post; // Postモデルをインポート
+use App\Models\users;
 
 class UsersController extends Controller
 {
@@ -15,4 +17,5 @@ class UsersController extends Controller
     public function search(){
         return view('users.search');
     }
+
 }
