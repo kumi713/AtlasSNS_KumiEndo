@@ -21,15 +21,22 @@
             {{ Form::submit('投稿する', ['class' => 'submit-btn']) }}
       </div>
     </div>
-    <div class=post-card>
-      <div class=post-body>
-      @foreach ($posts as $post)
-      <tr>
-        <<td>{{ $post->post }}</td>
-        <<td>{{ $post->updated_at }}</td>
-      </tr>
-      @endforeach
+    @foreach ($posts as $post)
+    <div class="post-card">
+      <div class="post-main">
+        <div class="post-header">
+          <td>{{ $post->user_id }}</td>
+          <td>{{ $post->updated_at }}</td>
+        </div>
+        <div class="post-body">
+          <td>{{ $post->post }}</td>
+        </div>
+        <div class="post-actions">
+          <td><a class="btn edit-btn">更新</a></td>
+          <td><a class="btn delete-btn">削除</a></td>
+        </div>
       </div>
     </div>
+    @endforeach
 
 </x-login-layout>
