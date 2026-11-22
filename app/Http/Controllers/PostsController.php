@@ -35,4 +35,11 @@ class PostsController extends Controller
       return redirect('/top');
     }
 
+    public function followList(){
+        return view('follows.followList');
+    }
+    public function followerList(){
+        return view('follows.followerList');
+    }
+
 }

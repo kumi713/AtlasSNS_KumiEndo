@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post; // Postモデルをインポート
-use App\Models\users;
+use App\Models\User;
 
 class UsersController extends Controller
 {
@@ -16,6 +16,11 @@ class UsersController extends Controller
 
     public function search(){
         return view('users.search');
+    }
+    public function index()
+    {
+        $users = User::all(); //Userモデル（usersテーブル）からレコード情報を取得
+        return view('users.search',['users'=>$users]);
     }
 
 }
