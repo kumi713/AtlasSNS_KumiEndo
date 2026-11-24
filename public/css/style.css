@@ -33,3 +33,37 @@ header{
   /* 🌟 通常の並び順（左から右）にするため、row-reverseを削除するか以下を指定します */
   flex-direction: row; 
 }
+/* リスト全体の幅と中央寄せ */
+.user-list {
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+/* 1ユーザーごとの横並びレイアウト */
+.user-item {
+  display: flex;
+  justify-content: space-between; /* 左右に振り分け */
+  align-items: center;            /* 上下中央揃え */
+  padding: 15px 0;
+}
+
+/* アイコンとユーザー名のグループ */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* アイコンと名前の隙間 */
+}
+
+/* 丸いアイコン */
+.user-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
